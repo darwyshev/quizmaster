@@ -22,7 +22,7 @@ namespace quizmaster
         {
             InitializeComponent();
             LoadQuestions();
-            ShuffleQuestions(); // << Tambahkan ini
+            ShuffleQuestions();
             ShowQuestion();
         }
 
@@ -98,11 +98,11 @@ namespace quizmaster
             if (selectedAnswer == q.CorrectAnswer)
             {
                 score++;
-                feedback = "✅ Benar!";
+                feedback = " Benar!";
             }
             else
             {
-                feedback = $"❌ Salah! Jawaban benar: {q.CorrectAnswer}";
+                feedback = $" Salah! Jawaban benar: {q.CorrectAnswer}";
             }
 
             MessageBox.Show(feedback);
